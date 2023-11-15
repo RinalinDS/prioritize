@@ -19,8 +19,6 @@ import { Toggler } from './Toggler';
 const AppWrapper = styled.div`
   width: 100%;
   min-height: 100vh;
-  margin: 0;
-  padding: 0;
 `
 
 
