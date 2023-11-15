@@ -1,27 +1,73 @@
-# React + TypeScript + Vite
+# Prioritize app built with React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## [Deployment](https://rinalinds.github.io/prioritize/)
 
-Currently, two official plugins are available:
+## How to Use
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- clone
+- yarn
+- yarn dev
+- server will start on http://127.0.0.1:3001/prioritize/
+- you need to change it to localhost:3000/prioritize/
+- changes to localhost has to be been to avoid CORS from API i've used here.
+- and prioritize after localhost was only possible workaround to deploy vite based project onto gh pages.
+- Despite the fact , that login and password available on login page , I will state it here :
 
-## Expanding the ESLint configuration
+<details>
+    <summary><u>Password for test user below:</u> (<i>click to expand</i>)</summary>
+    <!-- have to be followed by an empty line! --> 
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<p>Email: free@samuraijs.com</p>
+<p>Password: free</p>
+  </details>
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+This is a single page web-based application that allows users to manage their tasks. The app features the
+ability to add, remove, rename, and mark tasks as completed, as well as display all, active, or completed tasks. The app
+also includes a feature to switch between dark and light themes, as well as a login/authentication flow to protect user
+data.
+
+The application is connected to a real server, which allows for seamless data management and storage.
+
+## Technologies Used
+
+- TypeScript
+- React
+- Redux Toolkit
+- Redux Thunk
+- React Router DOM
+- Material-UI
+- Formik
+- Axios
+- Styled Components
+
+## Features
+
+- Add todolist
+- Delete todolist
+- Rename Todolist
+- Add a new task to the list
+- Remove a task from the list
+- Rename a task in the list
+- Mark a task as completed
+- Display all tasks in the list
+- Display only active tasks in the list
+- Display only completed tasks in the list
+- Switch between dark and light themes
+- Login/authentication flow to protect user data
+
+## Challenges
+
+During the development of this application, I encountered several challenges, including:
+
+- Learning how to use Material-UI and integrate it into the application
+- Implementing user authentication and authorization for the server
+- Figuring out the best way to manage state using Redux and Redux Toolkit
+- Integrating with the server using Axios and handling errors and responses appropriately
+- Building a responsive design using Styled Components and media queries
+
+## How to Use
+
+
+
