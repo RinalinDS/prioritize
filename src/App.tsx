@@ -14,7 +14,7 @@ import { Path } from './enums';
 import { darkTheme, GlobalStyles, lightTheme } from './Global';
 import { appActions } from './store/reducers/AppReducer';
 import { authActions } from './store/reducers/AuthReducer';
-import { Toggler } from './Toggler';
+import { Toggler } from './components/Toggler/Toggler';
 
 const AppWrapper = styled.div`
   width: 100%;
@@ -37,7 +37,7 @@ export const App: FC = () => {
   useEffect(() => {
     initializeApp()
     // это все та же строка dispatch(initilizeAppTC()),но теперь , благодаря хуку useActions, вызов происходит скрыто от нас, но это просто фикция)
-  }, [])
+  }, [initializeApp])
 
   const [theme, setTheme] = useState("dark");
   const isDarkTheme = theme === "dark";
@@ -59,7 +59,7 @@ export const App: FC = () => {
       setTheme("dark");
       setAppTheme('dark')
     }
-  }, []);
+  }, [setAppTheme]);
 
   const logoutHandler = () => {
     logout()
