@@ -7,10 +7,7 @@
 - clone
 - yarn
 - yarn dev
-- server will start on http://127.0.0.1:3001/prioritize/
-- you need to change it to localhost:3000/prioritize/
-- changes to localhost has to be been to avoid CORS from API i've used here.
-- and prioritize after localhost was only possible workaround to deploy vite based project onto gh pages.
+- server will start on localhost:3000/prioritize/
 - Despite the fact , that login and password available on login page , I will state it here :
 
 <details>
@@ -66,8 +63,5 @@ During the development of this application, I encountered several challenges, in
 - Figuring out the best way to manage state using Redux and Redux Toolkit
 - Integrating with the server using Axios and handling errors and responses appropriately
 - Building a responsive design using Styled Components and media queries
-
-## How to Use
-
 
 
