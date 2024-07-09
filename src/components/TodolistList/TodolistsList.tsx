@@ -19,6 +19,7 @@ export const TodolistsList: FC = () => {
 
   const addTodolistsCallback = useCallback(async (title: string, helper: AddItemFormSubmitHelperType) => {
     const thunk = TodoActions.addTodolist(title)
+    //TODO FIX
         //@ts-expect-error thunk
     const resultAction = await dispatch(thunk)
     if (TodoActions.addTodolist.rejected.match(resultAction)) {

@@ -195,7 +195,6 @@ test("proper task should have new title", () => {
   expect(updatedTaskTitle[todolistID1].length).toBe(4)
   expect(updatedTaskTitle[todolistID2].length).toBe(2)
   expect(updatedTaskTitle[todolistID1][2].status).toBe(TaskStatus.New)
-  // expect(updatedTaskTitle[todolistID2][0].status).toBe(TaskStatus.Completed)
   expect(updatedTaskTitle[todolistID2][0].title).toBe("Centurion")
   expect(updatedTaskTitle[todolistID2][1].title).toBe("Inception")
   expect(updatedTaskTitle[todolistID1][0].title).toBe("HTML")

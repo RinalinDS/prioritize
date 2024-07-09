@@ -36,7 +36,6 @@ export const App: FC = () => {
 
   useEffect(() => {
     initializeApp()
-    // это все та же строка dispatch(initilizeAppTC()),но теперь , благодаря хуку useActions, вызов происходит скрыто от нас, но это просто фикция)
   }, [initializeApp])
 
   const [theme, setTheme] = useState("dark");
@@ -63,7 +62,6 @@ export const App: FC = () => {
 
   const logoutHandler = () => {
     logout()
-    // это все та же строка dispatch(logoutTC()),но теперь , благодаря хуку useActions, вызов происходит скрыто от нас, но это просто фикция)
   }
   const backHomeHandler = () => {
     navigate('/')

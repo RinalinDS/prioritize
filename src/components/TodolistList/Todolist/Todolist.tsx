@@ -53,21 +53,10 @@ export const Todolist: FC<TodolistPropsType> = memo(({todolistID}) => {
   }, [todolistID, dispatch])
 
   const deleteTodolistHandler = useCallback(() => removeTodolist(todolistID), [todolistID, removeTodolist])
-  // это все еще работает как dispatch(removeTodolistТС(todolistID)), но благодаря кастомному хуку useActions и тому, что я засунул внутрь
-  // него в начале компоненты все экшны , которые относятся к таскам, он мне выдал колбэк,
-  // с таким же именем уже обернутый диспатчем
+
 
   const changeTodolistTitleHandler = useCallback((title: string) =>
     changeTodolistTitle({todolistID, title}), [todolistID, changeTodolistTitle])
-  // это все еще работает как dispatch(changeTodolistTitleТС(title: string)), но благодаря кастомному хуку useActions и тому, что я засунул внутрь
-  // него в начале компоненты все экшны , которые относятся к таскам, он мне выдал колбэк,
-  // с таким же именем уже обернутый диспатчем
-
-  // const addTaskHandler = useCallback((title: string) =>
-  //   addTask({todolistID, title}), [todolistID])
-  // // это все еще работает как dispatch(addTaskTC(title: string)), но благодаря кастомному хуку useActions и тому, что я засунул внутрь
-  // // него в начале компоненты все экшны , которые относятся к таскам, он мне выдал колбэк,
-  // // с таким же именем уже обернутый диспатчем
 
   let tasksForTodolist = tasks
   if (todolist.filter === "active") {

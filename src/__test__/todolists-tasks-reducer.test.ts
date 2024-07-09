@@ -14,7 +14,7 @@ test('ids should be equals', () => {
     const endTasksState = tasksReducer(startTasksState, action)
     const endTodolistsState = todolistsReducer(startTodolistsState, action)
 
-    const keys = Object.keys(endTasksState);  // vozvrawaet massiv svoistv ob'ekta
+    const keys = Object.keys(endTasksState); 
     const idFromTasks = keys[0];
     const idFromTodolists = endTodolistsState[0].id;
 

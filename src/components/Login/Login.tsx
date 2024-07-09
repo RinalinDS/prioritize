@@ -58,6 +58,7 @@ export const Login: FC = () => {
       return errors;
     },
     onSubmit: async (values, formikHelpers: FormikHelpers<FormValuesType>) => {
+      // TODO переделать на unwrap()
       //@ts-expect-error thunk
       const action = await dispatch(authActions.login(values)) // придет либо loginTC.fulfilled, или rejected
       if (authActions.login.rejected.match(action)) { //Из документации. Если тип action = rejected, то значит в пейлоаде

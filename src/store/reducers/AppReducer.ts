@@ -5,8 +5,6 @@ import {StatusCode} from '../../enums';
 import {authActions} from './AuthReducer';
 
 
-// НИКОГДА БЛЯДЬ НЕ ПИШИ ПУСТОЙ ОБЪЕКТ ( {} ) ЕСЛИ НЕТУ ПАРАМЕТРОВ ! ВСТАВЬ РАНДОМНОЕ НАЗВАНИЕ , НО НЕ ПУСТОЙ ОБЪЕКТ !
-
 export const initializeApp = createAsyncThunk('app/initializeAppTC', async (_, {dispatch}) => {
   const res = await authAPI.me()
   if (res.data.resultCode === StatusCode.Success) {
